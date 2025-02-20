@@ -14,10 +14,16 @@ body {
     -ms-user-select: none;
     user-select: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #000;
     background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
-    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 }
 
 header {
@@ -30,12 +36,12 @@ header {
 }
 
 header img {
-    margin: 15px;
+    margin: 0 30px;
     width: 180px;
 }
 
 nav {
-    margin: 15px;
+    margin: 0 30px;
 }
 
 nav ul {
@@ -133,8 +139,8 @@ a {
     top: 50%;
     left: 50%;
     text-align: center;
-    width: 230px;
-    height: 70px;
+    width: 282px;
+    height: 150px;
     transform: translate(-50%, -50%);
 }
 
@@ -162,83 +168,29 @@ h2, p {
 }
 
 @keyframes typing {
-    0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "Z"; }
-    2.2791%, 25.0698% { content: "Ze"; }
-    3.4186%, 23.9302% { content: "Zee"; }
-    4.5581%, 22.7907% { content: "Zeen"; }
-    5.6977%, 21.6512% { content: "Zeent"; }
-    6.8372%, 20.5116% { content: "Zeente"; }
-    7.9767%, 19.3721% { content: "Zeentec"; }
-    9.1163%, 18.2326% { content: "Zeentech"; }
-
-    /* 30.7674%, 51.2791% { content: ""; }
-    33.0465%, 49.0000% { content: "o "; }
-    34.1860%, 47.8605% { content: "o j"; }
-    35.3256%, 46.7209% { content: "o je"; }
-    36.4651%, 45.5814% { content: "o jei"; }
-    37.6047%, 44.4419% { content: "o jeit"; }
-    38.7442%, 43.3023% { content: "o jeito"; }
-    39.8837%, 42.1628% { content: "o jeito "; }
-    41.0233%, 41.0233% { content: "o jeito i"; }
-    42.1628%, 39.8837% { content: "o jeito in"; }
-    43.3023%, 38.7442% { content: "o jeito int"; }
-    44.4419%, 37.6047% { content: "o jeito inte"; }
-    45.5814%, 36.4651% { content: "o jeito intel"; }
-    46.7209%, 35.3256% { content: "o jeito inteli"; }
-    47.8605%, 34.1860% { content: "o jeito intelig"; }
-    49.0000%, 33.0465% { content: "o jeito intelige"; }
-    50.1395%, 31.9070% { content: "o jeito inteligent"; }
-    51.2791%, 30.7674% { content: "o jeito inteligente"; }
-    52.4186%, 29.6279% { content: "o jeito inteligente "; }
-    53.5581%, 28.4884% { content: "o jeito inteligente d"; }
-    54.6977%, 27.3488% { content: "o jeito inteligente de"; }
-    55.8372%, 26.2093% { content: "o jeito inteligente de "; }
-    56.9767%, 25.0698% { content: "o jeito inteligente de e"; }
-    58.1163%, 23.9302% { content: "o jeito inteligente de en"; }
-    59.2558%, 22.7907% { content: "o jeito inteligente de enc"; }
-    60.3953%, 21.6512% { content: "o jeito inteligente de enco"; }
-    61.5349%, 20.5116% { content: "o jeito inteligente de encon"; }
-    62.6744%, 19.3721% { content: "o jeito inteligente de encont"; }
-    63.8140%, 18.2326% { content: "o jeito inteligente de encont"; }
-    64.9535%, 17.0930% { content: "o jeito inteligente de encontr"; }
-    66.0930%, 15.9535% { content: "o jeito inteligente de encontra"; }
-    67.2326%, 14.8140% { content: "o jeito inteligente de encontrar"; }
-    68.3721%, 13.6744% { content: "o jeito inteligente de encontrar "; }
-    69.5116%, 12.5349% { content: "o jeito inteligente de encontrar s"; }
-    70.6512%, 11.3953% { content: "o jeito inteligente de encontrar so"; }
-    71.7907%, 10.2558% { content: "o jeito inteligente de encontrar sol"; }
-    72.9302%, 9.1163% { content: "o jeito inteligente de encontrar solu"; }
-    74.0698%, 7.9767% { content: "o jeito inteligente de encontrar soluç"; }
-    75.2093%, 6.8372% { content: "o jeito inteligente de encontrar soluçõ"; }
-    75.2093%, 6.8372% { content: "o jeito inteligente de encontrar soluçõe"; }
-    76.3488%, 5.6977% { content: "o jeito inteligente de encontrar soluções"; }
-
-    54.6977%, 75.2093% { content: ""; }
-    55.8372%, 74.0698% { content: "p"; }
-    56.9767%, 72.9302% { content: "pa"; }
-    58.1163%, 71.7907% { content: "pai"; }
-    59.2558%, 70.6512% { content: "paix"; }
-    60.3953%, 69.5116% { content: "paixã"; }
-    61.5349%, 68.3721% { content: "paixão"; }
-    62.6744%, 67.2326% { content: "paixão "; }
-    63.8140%, 66.0930% { content: "paixão p"; }
-    64.9535%, 64.9535% { content: "paixão po"; }
-    66.0930%, 63.8140% { content: "paixão por"; }
-    67.2326%, 62.6744% { content: "paixão por "; }
-    68.3721%, 61.5349% { content: "paixão por i"; }
-    69.5116%, 60.3953% { content: "paixão por in"; }
-    70.6512%, 59.2558% { content: "paixão por ino"; }
-    71.7907%, 58.1163% { content: "paixão por inova"; }
-    72.9302%, 56.9767% { content: "paixão por inovaç"; }
-    74.0698%, 55.8372% { content: "paixão por inovação"; }
-
-    78.6279%, 96.8605% { content: ""; }
-    79.7674%, 95.7209% { content: "h"; }
-    80.9070%, 94.5814% { content: "hu"; }
-    82.0465%, 93.4419% { content: "hum"; }
-    83.1860%, 92.3023% { content: "huma"; }
-    84.3256%, 91.1628% { content: "human"; } */
+    0.0000%, 80.0000% { content: ""; }
+    1.1395%, 78.8605% { content: "I"; }
+    2.2791%, 77.7210% { content: "In"; }
+    3.4186%, 76.5814% { content: "Int"; }
+    4.5581%, 75.4419% { content: "Inte"; }
+    5.6977%, 74.3023% { content: "Intel"; }
+    6.8372%, 73.1628% { content: "Intell"; }
+    7.9767%, 72.0233% { content: "Intelli"; }
+    9.1163%, 70.8837% { content: "Intellig"; }
+    10.2558%, 69.7442% { content: "Intellige"; }
+    11.3953%, 68.6047% { content: "Intelligen"; }
+    12.5349%, 67.4651% { content: "Intelligenc"; }
+    13.6744%, 66.3256% { content: "Intelligence"; }
+    14.8140%, 65.1860% { content: "Intelligence "; }
+    15.9535%, 64.0465% { content: "Intelligence D"; }
+    17.0930%, 62.9070% { content: "Intelligence Da"; }
+    18.2326%, 61.7674% { content: "Intelligence Dat"; }
+    19.3721%, 60.6279% { content: "Intelligence Data"; }
+    20.5116%, 59.4884% { content: "Intelligence Data "; }
+    21.6512%, 58.3488% { content: "Intelligence Data T"; }
+    22.7907%, 57.2093% { content: "Intelligence Data Te"; }
+    23.9302%, 56.0698% { content: "Intelligence Data Tea"; }
+    25.0698%, 54.9302% { content: "Intelligence Data Team"; }
 }
 
 @keyframes blink {
@@ -252,7 +204,7 @@ h2, p {
 
 .typewriter::before {
     content: "";
-    animation: typing 13.5s forwards;
+    animation: typing 15s infinite;
 }
 
 .typewriter::after {
@@ -296,11 +248,11 @@ h2, p {
 }
 
 .projetos .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas */
-    gap: 20px; /* Espaçamento entre os cards */
-    align-items: stretch; /* Faz os cards ficarem do mesmo tamanho verticalmente */
-    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -311,8 +263,8 @@ h2, p {
 
 .card {
     position: relative;
-    height: 400px;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     margin: 10px 0;
     transition: ease all 0.3s;
     perspective: 1200px;
