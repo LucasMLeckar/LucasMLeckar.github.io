@@ -299,39 +299,11 @@ h2, p {
     height: 100%;
     width: 100%;
     transform-style: preserve-3d;
-    transition: ease all 0.3s;
+    transition: ease all 1s;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-
-.cover:before {
-    content: '';
-    position: absolute;
-    /* border: 5px solid rgba(255, 255, 255, 0.5); */
-    /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); */
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    z-index: 2;
-    transition: ease all 0.3s;
-    transform-style: preserve-3d;
-    transform: translateZ(0px);
-}
-
-.cover:after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 2;
-    transition: ease all 1.3s;
-    /* background: rgba(0, 0, 0, 0.4); */
-}
-
 
 
 .card div h1 {
@@ -343,8 +315,8 @@ h2, p {
     transform-style: preserve-3d;
     transition: ease all 0.3s;
     z-index: 3;
-    font-size: 3em;
-    transform: translateZ(0px);
+    font-size: 36px;
+    transform: translateZ(100px);
 }
 
 .price {
@@ -354,7 +326,7 @@ h2, p {
     right: 50px;
     color: white;
     transform-style: preserve-3d;
-    transition: ease all 0.3s;
+    transition: ease all 10s;
     z-index: 4;
     font-size: 2em;
     transform: translateZ(0px);
@@ -366,7 +338,7 @@ h2, p {
     width: 100%;
     background: #000a1a;
     transform-style: preserve-3d;
-    transition: ease all 0.3s;
+    transition: ease all 10s;
     transform: translateZ(-1px);
     display: flex;
     align-items: center;
