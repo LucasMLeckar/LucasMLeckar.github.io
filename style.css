@@ -267,31 +267,11 @@ h2, p {
     width: 300px;
     margin: 10px 0;
     transition: ease all 0.3s;
-    perspective: 1200px;
+    perspective: 1000px;
 }
 
 .card:hover .cover {
     transform: rotateX(0deg) rotateY(-180deg);
-}
-
-.card:hover .cover:before {
-    transform: translateZ(30px);
-}
-
-.card:hover .cover:after {
-    background-color: black;
-}
-
-.card:hover h1 {
-    transform: translateZ(100px);
-}
-
-.card:hover .price {
-    transform: translateZ(60px);
-}
-
-.card:hover a {
-    transform: translateZ(-60px) rotateY(-180deg);
 }
 
 .cover {
@@ -310,26 +290,13 @@ h2, p {
     font-weight: 500;
     position: absolute;
     bottom: 55px;
-    left: 50px;
+    left: 30px;
     color: white;
     transform-style: preserve-3d;
     transition: ease all 0.3s;
     z-index: 3;
-    font-size: 36px;
+    font-size: 28px;
     transform: translateZ(100px);
-}
-
-.price {
-    font-weight: 200;
-    position: absolute;
-    top: 55px;
-    right: 50px;
-    color: white;
-    transform-style: preserve-3d;
-    transition: ease all 10s;
-    z-index: 4;
-    font-size: 2em;
-    transform: translateZ(0px);
 }
 
 .card-back {
@@ -357,6 +324,7 @@ h2, p {
     padding: 14px 32px;
     outline: none;
     text-decoration: none;
+    transform: translateZ(-60px) rotateY(-180deg)
 }
 
 .card-back a:hover {
