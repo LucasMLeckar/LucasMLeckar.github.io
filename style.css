@@ -21,6 +21,7 @@ body {
     background-color: #000;
     background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
     radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+    overflow-x: hidden;
 }
 
 main {
@@ -80,7 +81,7 @@ canvas {
     width: 953px;
     height: 953px;
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -639,21 +640,205 @@ h2, p {
 }
 
 
-/* .patinho {
-    position: fixed;
+.patinho {
+    position: absolute;
     top: 50%;
-    left: 100%;
+    left: 90%;
     width: 50px;
     transform: translateY(-50%);
-    animation: orbit 2s 5s linear forwards;
+    animation: orbit 15s linear forwards;
 }
 
 @keyframes orbit {
     0% {
-        transform: translateY(50%) translateX(0);
+        left: 85%;
+        top: 10%;
+        transform: scale(0.1);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    7.14% {
+        left: 77.5%;
+        top: 12.5%;
+        transform: scale(0.15);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    14.29% {
+        left: 70%;
+        top: 15%;
+        transform: scale(0.2);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    21.43% {
+        left: 62.5%;
+        top: 17.5%;
+        transform: scale(0.25);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    28.57% {
+        left: 55%;
+        top: 20%;
+        transform: scale(0.3);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    35.71% {
+        left: 47.5%;
+        top: 22.5%;
+        transform: scale(0.35);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    42.86% {
+        left: 40%;
+        top: 25%;
+        transform: scale(0.4);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    45% {
+        left: 37.5%;
+        top: 29%;
+        transform: scale(0.6);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    47.14% {
+        left: 35%;
+        top: 33%;
+        transform: scale(0.8);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    49.29% {
+        left: 34%;
+        top: 36.5%;
+        transform: scale(0.9);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    51.43% {
+        left: 33%;
+        top: 40%;
+        transform: scale(1);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    53.57% {
+        left: 33%;
+        top: 42.5%;
+        transform: scale(1.1);
+        z-index: 1;
+        opacity: 1;
+    }
+
+    55.71% {
+        left: 33%;
+        top: 45%;
+        transform: scale(1.2);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    57.86% {
+        left: 34%;
+        top: 47.5%;
+        transform: scale(1.3);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    60% {
+        left: 35%;
+        top: 50%;
+        transform: scale(1.4);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    62.14% {
+        left: 37.5%;
+        top: 52.5%;
+        transform: scale(1.5);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    64.29% {
+        left: 40%;
+        top: 55%;
+        transform: scale(1.6);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    67.86% {
+        left: 45%;
+        top: 56%;
+        transform: scale(1.6);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    71.43% {
+        left: 50%;
+        top: 57%;
+        transform: scale(1.6);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    75% {
+        left: 55%;
+        top: 54%;
+        transform: scale(1.5);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    78.57% {
+        left: 60%;
+        top: 50%;
+        transform: scale(1.4);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    85.72% {
+        left: 65%;
+        top: 40%;
+        transform: scale(1);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    92.86% {
+        left: 70%;
+        top: 30%;
+        transform: scale(0.3);
+        z-index: 1;
+        opacity: 1;
     }
 
     100% {
-        transform: translateY(-50%) translateX(-3000%);
+        left: 72%;
+        top: 25%;
+        transform: scale(0.1);
+        z-index: 1;
+        opacity: 0;
     }
-} */
+}

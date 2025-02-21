@@ -419,17 +419,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
-    // // Ajustar a posição da imagem do patinho
-    // const patinho = document.querySelector('.patinho');
-    // const globeCanvas = document.getElementById('globeCanvas');
-
-    // function adjustPatinhoPosition() {
-    //     const globeRect = globeCanvas.getBoundingClientRect();
-    //     patinho.style.top = `${globeRect.top + globeRect.height / 2}px`;
-    // }
-
-    // window.addEventListener('resize', adjustPatinhoPosition);
-    // window.addEventListener('scroll', adjustPatinhoPosition);
-    // adjustPatinhoPosition();
 });
