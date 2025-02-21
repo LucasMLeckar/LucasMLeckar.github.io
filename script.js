@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Adicionando a rotação contínua do globo
-        sphere.rotation.y += 0.01;  // Girando a esfera no eixo Y
+        sphere.rotation.y += 0.005;  // Girando a esfera no eixo Y
 
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
@@ -418,4 +418,18 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+
+
+    // // Ajustar a posição da imagem do patinho
+    // const patinho = document.querySelector('.patinho');
+    // const globeCanvas = document.getElementById('globeCanvas');
+
+    // function adjustPatinhoPosition() {
+    //     const globeRect = globeCanvas.getBoundingClientRect();
+    //     patinho.style.top = `${globeRect.top + globeRect.height / 2}px`;
+    // }
+
+    // window.addEventListener('resize', adjustPatinhoPosition);
+    // window.addEventListener('scroll', adjustPatinhoPosition);
+    // adjustPatinhoPosition();
 });

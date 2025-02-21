@@ -268,12 +268,6 @@ h2, p {
     height: fit-content;
 }
 
-.projetos .row div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 @media (max-width: 1040px) {
     .projetos .row {
@@ -311,6 +305,7 @@ h2, p {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 .cover:before {
@@ -328,6 +323,30 @@ h2, p {
     transform: translateZ(30px);
 }
 
+/* .item-a:before {
+    border: 5px solid rgba(149, 42, 255, 0.3);
+}
+
+.item-b:before {
+    border: 5px solid rgba(249, 177, 52, 0.4);
+}
+
+.item-c:before {
+    border: 5px solid rgba(62, 205, 93, 0.4);
+}
+
+.item-d:before {
+    border: 5px solid rgba(76, 73, 234, 0.4);
+}
+
+.item-e:before {
+    border: 5px solid rgba(228, 62, 2, 0.4);
+}
+
+.item-f:before {
+    border: 5px solid rgba(205, 62, 148, 0.4);
+} */
+
 .card:hover .cover:before {
     border: 5px solid rgb(255, 255, 255, 0.8);
 }
@@ -336,7 +355,7 @@ h2, p {
 .card div h1 {
     font-weight: 500;
     position: absolute;
-    top: 45px;
+    bottom: 45px;
     left: 40px;
     color: white;
     transform-style: preserve-3d;
@@ -352,11 +371,12 @@ h2, p {
     width: 100%;
     background: #000a1a;
     transform-style: preserve-3d;
-    transition: ease all 10s;
+    /* transition: ease all 10s; */
     transform: translateZ(-1px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
 }
 
 .card-back a {
@@ -373,11 +393,29 @@ h2, p {
     text-decoration: none;
     transform: translateZ(-60px) rotateY(-180deg);
     will-change: transform, background;
+    position: absolute;
+    bottom: 40px;
 }
 
 .card-back a:hover {
     background-color: white;
     color: #0b0f08;
+}
+
+.card-back p {
+    transform-style: preserve-3d;
+    transition: ease transform 0.3s, ease background 0.5s;
+    transform: translateZ(-1px) rotateY(-180deg);
+    background: transparent;
+    font-weight: 200;
+    font-size: 18px;
+    color: white;
+    padding: 14px 32px;
+    outline: none;
+    text-decoration: none;
+    transform: translateZ(-60px) rotateY(-180deg);
+    will-change: transform, background;
+    text-align: justify;
 }
 
 /* Flexbox para organizar texto e card lado a lado */
@@ -585,15 +623,37 @@ h2, p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #555;
+    background-color: #1b4dbb;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
+    border-radius: 50%;
     transition: ease opacity 0.5s;
     pointer-events: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #333;
+    background-color: #1b4ebb88;
 }
+
+
+/* .patinho {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    width: 50px;
+    transform: translateY(-50%);
+    animation: orbit 2s 5s linear forwards;
+}
+
+@keyframes orbit {
+    0% {
+        transform: translateY(50%) translateX(0);
+    }
+
+    100% {
+        transform: translateY(-50%) translateX(-3000%);
+    }
+} */
