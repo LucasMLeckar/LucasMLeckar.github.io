@@ -395,6 +395,27 @@ document.addEventListener('DOMContentLoaded', function() {
         context.stroke();
 
         } );
-
     }
+
+    // Botão de rolagem para o topo
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Mostrar o botão quando rolar para baixo 20px
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.opacity = "1";
+            scrollToTopBtn.style.pointerEvents = "all";
+        } else {
+            scrollToTopBtn.style.opacity = "0";
+            scrollToTopBtn.style.pointerEvents = "none";
+        }
+    };
+
+    // Rolar para o topo quando o botão for clicado
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
